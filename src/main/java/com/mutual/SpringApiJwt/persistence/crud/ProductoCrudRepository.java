@@ -25,6 +25,8 @@ import java.util.Optional;
  *          deleteAll()
  * */
 
+
+                                                //@Autowired
 public interface ProductoCrudRepository extends CrudRepository<Producto, Integer> {
 
     //Convencional

@@ -15,9 +15,9 @@ import java.util.List;
  *
  * @Mapping(source = "categoria", target = "category")
  *                                      /
- *                                     /
- *                                    /
- *                                   V
+ *   Importante:                       /
+ *   Tambien nos permite usarlo       /
+ *   con el @Autowired               V
  * */
 @Mapper(componentModel = "spring", uses = {CategoryMapper.class})
 public interface ProductMapper {

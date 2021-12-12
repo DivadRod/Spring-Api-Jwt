@@ -5,6 +5,7 @@ import com.mutual.SpringApiJwt.domain.repository.ProductRepository;
 import com.mutual.SpringApiJwt.persistence.crud.ProductoCrudRepository;
 import com.mutual.SpringApiJwt.persistence.entity.Producto;
 import com.mutual.SpringApiJwt.persistence.mapper.ProductMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -17,9 +18,13 @@ import java.util.Optional;
 @Repository
 public class ProductoRepository implements ProductRepository {
 
+
+    @Autowired
     private ProductoCrudRepository productoCrudRepository;
 
+
     //Varaible de MapStruct
+    @Autowired
     private ProductMapper mapper;
 
 
